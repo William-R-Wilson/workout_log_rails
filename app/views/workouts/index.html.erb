@@ -1,5 +1,19 @@
 <div class = "container" >
   <div class = "jumbotron">
-    <h1>All Exercises!</h1>
+    <h1>Workouts</h1>
+    <div class = "row">
+      <div class = "col-xs-2">
+        <ul class = "list-group">
+          <% @workouts.each do |w| %>
+            <li class = "list-group-item"><%= w.date %></li>
+          <% end %>
+        </ul>
+      </div>
+      <div class = "col-xs-6" id = "new-workout">
+      </div>
+    </div>
+    <div class = "row">
+      <%= link_to "New Workout", new_workout_path, remote: true %>
+    </div>
   </div>
 </div>

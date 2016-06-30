@@ -1,0 +1,14 @@
+<div class = "container" >
+  <div class = "jumbotron">
+    <h1>Exercises</h1>
+    <div class = "row">
+      <div class = "col-xs-2">
+        <ul class = "list-group">
+          <% @exercises.each do |e| %>
+            <li class = "list-group-item"><%= e.name %></li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
