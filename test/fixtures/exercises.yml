@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  time_based: false
+  weight: false
+  sets: false
+  reps: false
+
+two:
+  name: MyString
+  time_based: false
+  weight: false
+  sets: false
+  reps: false
